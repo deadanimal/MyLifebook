@@ -13,8 +13,9 @@
 
 <body class="antialiased">
 
-
     @yield('content')
+
+    @include('layouts.footer')
 
 </body>
 

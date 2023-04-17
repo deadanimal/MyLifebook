@@ -40,7 +40,12 @@ class CreateNewUser implements CreatesNewUsers
 
         Profile::create([
             'user_id' => $user->id,
-        ]);
+        ]);     
+        
+        $user
+            ->newSubscription( 'prod_N3Kx5RISCPvNCg', 'price_1MJEHqL56wwkJgEVb4KLIZFQ')
+            ->trialDays(14)
+            ->create();   
 
         return $user;
     }

@@ -22,7 +22,4 @@ class StaticController extends Controller
         return view('static.privacy');
     }            
 
-    // public function stripe_billing(Request $request) {
-    //     return view('static.home');
-    // }    
 }

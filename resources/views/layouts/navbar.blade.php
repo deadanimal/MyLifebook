@@ -3,7 +3,7 @@
         <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
             <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
                 <div class="flex flex-shrink-0 items-center">
-                    <a href="#">
+                    <a href="/dashboard">
                         <img class="block h-8 w-auto"
                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
                     </a>
@@ -91,8 +91,8 @@
                         <a href="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
                             id="user-menu-item-0">Profile</a>
 
-                        <a href="/settings" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                            id="user-menu-item-1">Settings</a>
+                        <a href="/billing" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                            id="user-menu-item-1">Billing</a>
 
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
                             id="user-menu-item-2" onclick="logOut()">Sign out</a>

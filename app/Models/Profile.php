@@ -12,6 +12,5 @@ class Profile extends Model
     protected $fillable = [ 
         'username',
         'user_id',
-        'credit'
     ];      
 }

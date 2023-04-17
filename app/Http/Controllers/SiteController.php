@@ -51,12 +51,31 @@ class SiteController extends Controller
     }   
     
     public function billing(Request $request) {
-        return $request->user()->redirectToBillingPortal();        
+        $user = $request->user();
+        $stripeCustomer = $user->createOrGetStripeCustomer();
+
+
+        return $request->user()->redirectToBillingPortal(route('dashboard'));        
     }
 
     public function dashboard(Request $request) {
-
         return view('app.dashboard');
+    }
+
+    public function check_subscription($user) {
+
+        $subscription_type = '';
+
+        if ($user->subscribed('prod_N3Kx5RISCPvNCg')) {
+            $subscription_type = 'monthly_basic';
+            
+        } else if ($user->subscribed('prod_N3Kx5RISCPvNCg')) {
+
+        } else {
+
+        }
+
+        return $subscription_type;
     }
 
 }

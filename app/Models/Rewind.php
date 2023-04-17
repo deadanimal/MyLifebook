@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Rewind extends Model
 {
     use HasFactory;
+
+    protected $fillable = [ 
+        'title',
+        'profile_id',
+    ];        
 }
