@@ -11,8 +11,16 @@ use Illuminate\Http\Request;
 class RecordController extends Controller
 {
     public function create_record(Request $request) {
-        $record = Record::create([
+        
+        $site_con = new SiteController;
+        $subs_type = $site_con->check_subscription($request->user());
 
+        $user_id = $request->user()->id;
+        $profile_id = Profile::where([
+            ['user_id', '=', $user_id]
+        ])->first()->id;    
+        $record = Record::create([
+            'profile_id' => $profile_id
         ]);
 
         return back();
@@ -21,8 +29,7 @@ class RecordController extends Controller
     public function list_records(Request $request) {
         
         $site_con = new SiteController;
-        $lol = $site_con->check_subscription($request->user());
-        //dd($lol);
+        $subs_type = $site_con->check_subscription($request->user());
 
         $user_id = $request->user()->id;
         $profile_id = Profile::where([
@@ -59,6 +66,10 @@ class RecordController extends Controller
     }    
 
     public function create_question(Request $request) {
+
+        $site_con = new SiteController;
+        $subs_type = $site_con->check_subscription($request->user());
+                
         $user_id = $request->user()->id;
         $profile_id = Profile::where([
             ['user_id', '=', $user_id]

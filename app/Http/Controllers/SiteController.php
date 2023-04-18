@@ -52,10 +52,18 @@ class SiteController extends Controller
     
     public function billing(Request $request) {
         $user = $request->user();
-        $stripeCustomer = $user->createOrGetStripeCustomer();
-
-
+        $user->createOrGetStripeCustomer();
         return $request->user()->redirectToBillingPortal(route('dashboard'));        
+    }
+
+    public function buy_product(Request $request) {
+        $product_name = $request->product_name;
+        if($product_name == '1kc') {
+            $price_id = 'price_1MxrHXL56wwkJgEVj5dhmqa4';
+        } else if ($product_name == '10kc') {
+            $price_id = 'price_1MxrIEL56wwkJgEVvzBFQI7u';
+        }
+        return $request->user()->checkout($price_id);
     }
 
     public function dashboard(Request $request) {
