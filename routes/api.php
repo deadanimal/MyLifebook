@@ -9,7 +9,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 require __DIR__.'/api/profile.php';
-require __DIR__.'/api/question.php';
-require __DIR__.'/api/record.php';
-require __DIR__.'/api/site.php';
-require __DIR__.'/api/static.php';
+// require __DIR__.'/api/question.php';
+// require __DIR__.'/api/record.php';
+// require __DIR__.'/api/site.php';
+// require __DIR__.'/api/static.php';
