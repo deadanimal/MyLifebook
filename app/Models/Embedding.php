@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Rewind extends Model
+class Embedding extends Model
 {
     use HasFactory;
-
-    protected $fillable = [ 
-        'title',
-        'profile_id',
-    ];        
 }

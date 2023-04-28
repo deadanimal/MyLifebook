@@ -8,18 +8,21 @@ use App\Models\Record;
 use App\Models\Rewind;
 use Illuminate\Http\Request;
 
-class RecordController extends Controller
-{
-    public function create_record(Request $request) {
-        
-        $site_con = new SiteController;
-        $subs_type = $site_con->check_subscription($request->user());
+class RecordController extends Controller {
 
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;    
+    public function create_record(Request $request) {
+
+        $user = $request->user();
+        $profile_id = $user->profile->id;
+        $profile_type = $user->profile->type;    
+
+        // queue upload to R2
+        // queue to transform image, video, audio
+ 
         $record = Record::create([
+            'title' => '',
+            'type' => '',
+            'status' => '',
             'profile_id' => $profile_id
         ]);
 
@@ -27,82 +30,62 @@ class RecordController extends Controller
     }
 
     public function list_records(Request $request) {
-        
-        $site_con = new SiteController;
-        $subs_type = $site_con->check_subscription($request->user());
 
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
+        $user = $request->user();
+        $profile_id = $user->profile->id;
+        $profile_type = $user->profile->type;            
+
         $records = Record::where([
             ['profile_id', '=', $profile_id]
         ])->get();
-        return view('app.records', compact('records'));
+
+        return view('record.list', compact('records'));
     }
 
     public function detail_record(Request $request) {
+
+        $user = $request->user();
+        $profile_id = $user->profile->id;
+        $profile_type = $user->profile->type;        
+        
         $id = (int)$request->route('record_id');
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
+        
         $record = Record::where([
             ['profile_id', '=', $profile_id],
             ['id', '=', $id],
         ])->get();  
-        return view('app.record', compact('record'));      
+
+        return view('record.detail', compact('record'));      
     }
 
-    public function list_questions(Request $request) {
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
-        $questions = Question::where([
-            ['profile_id', '=', $profile_id]
-        ])->get();
-        return view('app.questions', compact('questions'));
-    }    
+    public function update_record(Request $request) {
 
-    public function create_question(Request $request) {
+        $user = $request->user();
+        $profile_id = $user->profile->id;
+        $profile_type = $user->profile->type; 
 
-        $site_con = new SiteController;
-        $subs_type = $site_con->check_subscription($request->user());
-                
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
+        $id = (int)$request->route('record_id');
         
-        $question = Question::create([
-            'statement' => $request->search,
-            'profile_id' => $profile_id
+        $record = Record::where([
+            ['profile_id', '=', $profile_id],
+            ['id', '=', $id],
+        ])->get();
+
+        $record->update([
+
         ]);
 
-        return view('app.question_result', compact('question'));
-    }
+        return back();
+    }   
 
-    public function list_rewinds(Request $request) {
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
-        $rewinds = Rewind::where([
-            ['profile_id', '=', $profile_id]
-        ])->get();
-        return view('app.rewinds', compact('rewinds'));
-    }        
+    public function translate_text(Request $request) {}
 
-    public function create_rewind(Request $request) {
-        $user_id = $request->user()->id;
-        $profile_id = Profile::where([
-            ['user_id', '=', $user_id]
-        ])->first()->id;
-        
-        $rewind = Rewind::create([
+    public function transcribe_video(Request $request) {}
 
-        ]);
-        return view('app.rewinds', compact('rewind'));        
-    }
+    public function translate_video(Request $request) {}       
+    
+    public function transcribe_audio(Request $request) {}
+
+    public function translate_audio(Request $request) {}    
+
 }
