@@ -18,11 +18,10 @@ class DocumentController extends Controller
 
     public function list_documents(Request $request)
     {
-        $avs = PersonDocument::where('profile_id', $request->user()->profile->id)->get();
-        $response = OpenAI::models()->list();
-        $response->object;
+        $documents = PersonDocument::where('profile_id', $request->user()->profile->id)->get();
+
         return [
-            'data' => $response->toArray(),
+            'data' => $documents,
             'message' => ''
         ];
     }
@@ -31,12 +30,12 @@ class DocumentController extends Controller
     {
         $profile_type = $request->user()->profile->profile_type;
 
-        $av = PersonDocument::where([
+        $document = PersonDocument::where([
             ['uuid', '=', $request->uuid],
         ])->first();
 
         return [
-            'data' => $av,
+            'data' => $document,
             'message' => ''
         ];
     }
@@ -46,7 +45,7 @@ class DocumentController extends Controller
         $profile_uuid = $request->user()->profile->uuid;
         $profile_id = $request->user()->profile->id;
 
-        $av = PersonDocument::create([
+        $document = PersonDocument::create([
             'uuid' => (string) Str::orderedUuid(),
             'profile_id' => $profile_id,
 
@@ -60,6 +59,7 @@ class DocumentController extends Controller
         ]);
 
         $url = 'https://langchain-demo-472d41c.svc.us-west1-gcp-free.pinecone.io/vectors/upsert';
+        
         $result = Http::withHeaders([
             'Content-Type' => 'application/json',
             'Api-Key' => env('PINECONE_API_KEY')
@@ -76,26 +76,26 @@ class DocumentController extends Controller
         ]);
 
 
-
         return [
-            'data' => $av,
+            'data' => $document,
             'lol'=> $result,
             'message' => ''
         ];
+
     }
 
     public function update_document(Request $request)
     {
         $profile_type = $request->user()->profile->profile_type;
 
-        $av = PersonDocument::where([
+        $document = PersonDocument::where([
             ['uuid', '=', $request->uuid],
         ])->first();
 
-        $av->update([]);
+        $document->update([]);
 
         return [
-            'data' => $av,
+            'data' => $document,
             'message' => ''
         ];
     }
@@ -104,11 +104,11 @@ class DocumentController extends Controller
     {
         $profile_type = $request->user()->profile->profile_type;
 
-        $av = PersonDocument::where([
+        $document = PersonDocument::where([
             ['uuid', '=', $request->uuid],
         ])->first();
 
-        $av->softDelete();
+        $document->softDelete();
 
         return [
             'message' => ''
@@ -119,12 +119,12 @@ class DocumentController extends Controller
     {
         $profile_type = $request->user()->profile->profile_type;
 
-        $av = PersonDocument::where([
+        $document = PersonDocument::where([
             ['uuid', '=', $request->uuid],
         ])->first();
 
         return [
-            'data' => $av,
+            'data' => $document,
             'message' => ''
         ];
     }
