@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Http;
 class DocumentController extends Controller
 {
 
-
-
     public function list_documents(Request $request)
     {
         $documents = PersonDocument::where('profile_id', $request->user()->profile->id)->get();
