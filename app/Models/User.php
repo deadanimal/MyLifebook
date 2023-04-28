@@ -8,11 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Cashier\Billable;
+use BinaryCabin\LaravelUUID\Traits\HasUUID;
+
 
 
 class User extends Authenticatable
 {
-    use Billable, HasApiTokens, HasFactory, Notifiable;
+    use Billable, HasApiTokens, HasFactory, Notifiable, HasUUID;
 
     /**
      * The attributes that are mass assignable.
@@ -23,6 +25,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'uuid',
     ];
 
     /**
@@ -43,4 +46,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }    
 }

@@ -8,6 +8,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+require __DIR__.'/api/audiovisual.php';
+require __DIR__.'/api/document.php';
 require __DIR__.'/api/profile.php';
 // require __DIR__.'/api/question.php';
 // require __DIR__.'/api/record.php';
