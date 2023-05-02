@@ -18,6 +18,8 @@
         "mkocansey/bladewind": "^2.1",
         "openai-php/client": "^0.4.2",
         "openai-php/laravel": "^0.4.3",
+        "pbmedia/laravel-ffmpeg": "^8.3",
+        "spatie/image": "^2.2",
         "spatie/laravel-activitylog": "^4.7"
     },
     "require-dev": {
