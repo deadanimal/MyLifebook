@@ -16,6 +16,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/audiovisuals', [AudiovisualController::class, 'create_audiovisual']);   
     Route::get('/audiovisuals/{audiovisual_id}', [AudiovisualController::class, 'detail_audiovisual']);
     Route::put('/audiovisuals/{audiovisual_id}/remove', [AudiovisualController::class, 'remove_audiovisual']);
-    Route::put('/audiovisuals/{audiovisual_id}/annotations', [AudiovisualController::class, 'update_audiovisual_annotations']);
+    #Route::put('/audiovisuals/{audiovisual_id}/annotations', [AudiovisualController::class, 'update_audiovisual_annotations']);
 
 });

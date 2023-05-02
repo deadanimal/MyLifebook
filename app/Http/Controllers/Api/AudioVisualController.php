@@ -11,6 +11,7 @@ use Illuminate\Support\Str;
 class AudioVisualController extends Controller
 {
     public function list_audiovisuals(Request $request) {
+        
         $avs = PersonAudiovisual::where('profile_id', $request->user()->profile->id)->get();
         return [
             'data' => $avs,
