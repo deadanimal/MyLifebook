@@ -6,12 +6,13 @@ namespace App\Http\Controllers\Api;
 use App\Models\PersonAudiovisual;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-
-
+use OpenAI\Laravel\Facades\OpenAI;
+use AdrianMejias\Pinecone\Facades\Pinecone;
+use Illuminate\Support\Facades\Http;
 class AudioVisualController extends Controller
 {
     public function list_audiovisuals(Request $request) {
-        
+
         $avs = PersonAudiovisual::where('profile_id', $request->user()->profile->id)->get();
         return [
             'data' => $avs,
@@ -34,6 +35,14 @@ class AudioVisualController extends Controller
 
     public function create_audiovisual(Request $request) {
         $profile_id = $request->user()->profile->id;
+
+        $response = OpenAI::embeddings()->create([
+            'model' => 'whisper-1',
+            'file' => '',
+            'response_format' => 'verbose_json'
+            // 'input' => $request->raw,
+        ]);
+
 
         $av = PersonAudiovisual::create([
             'uuid' => (string) Str::orderedUuid(),
