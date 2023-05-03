@@ -17,3 +17,7 @@ Route::get('/privacy', function () {
 Route::get('/terms', function () {
     return view('static.terms');
 });
+
+Route::get('/mobile-from-billing', function () {
+    return view('static.terms');
+})->name('mobile-from-billing');

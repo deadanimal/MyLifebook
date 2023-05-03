@@ -43,10 +43,11 @@ class ProfileController extends Controller
     }
 
     public function billing(Request $request) {
+
         $user = $request->user();
         $user->createOrGetStripeCustomer();
         $url = $request->user()
-                        ->redirectToBillingPortal();        
+                        ->redirectToBillingPortal(route('mobile-from-billing'));        
         return [
             'data' => [
                 'url' => $url,

@@ -17,5 +17,4 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/billing', [ProfileController::class, 'billing']);  
 
-
 });
