@@ -13,9 +13,7 @@ class ChatController extends Controller
         $chats = Chat::where('profile_id', $profile_id)->get();
 
         return [
-            'data' => [
-                'chats' => $chats,
-            ],
+            'chats' => $chats,
             'message' => ''
         ];        
     }
