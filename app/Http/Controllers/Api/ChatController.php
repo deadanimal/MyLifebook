@@ -38,6 +38,8 @@ class ChatController extends Controller
 
         $chat = Chat::create([                        
             'from_bot' => false,
+            'chat_type' => $request->chat_type ,
+
             'profile_id' => $profile_id,
             'uuid' => (string) Str::orderedUuid(), 
         ]);
