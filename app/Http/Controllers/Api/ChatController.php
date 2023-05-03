@@ -10,7 +10,7 @@ class ChatController extends Controller
 {
     public function list_chats(Request $request) {
         $profile_id = $request->user()->profile->id;
-        $chats = Chat::where('profile_id', $profile_id)->get();
+        $chats = Chat::where('profile_id', $profile_id)->orderByDesc('created_at')->get();
 
         return [
             'chats' => $chats,
