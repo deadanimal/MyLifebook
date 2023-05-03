@@ -15,13 +15,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/profile', [ProfileController::class, 'view_profile']);   
     Route::put('/profile', [ProfileController::class, 'update_profile']);   
 
-    Route::get('/billing', [ProfileController::class, 'billing']);
-
-    Route::delete('/tokens', function (Request $request) {
-        $user = $request->user();
-        $user->tokens()->delete();
-        return ['message' => 'All previous tokens deleted.'];        
-    });    
+    Route::get('/billing', [ProfileController::class, 'billing']);  
 
 
 });
