@@ -19,7 +19,17 @@ class ChatController extends Controller
     }
 
     public function detail_chat(Request $request) {
+        $profile_id = $request->user()->profile->id;
+        $uuid = $request->route('chat_id');
+        $chat = Chat::where([
+            ['uuid', '=', $uuid],
+            ['profile_id', '=', $profile_id],
+        ])->first();
 
+        return [
+            'chat' => $chat,
+            'message' => ''
+        ];          
     }
 
     public function create_chat(Request $request) {
