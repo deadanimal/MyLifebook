@@ -50,7 +50,7 @@ class AuthController extends Controller
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-            'device_name' => 'required',
+            //'device_name' => 'required',
         ]);
 
         $user = User::where('email', $request->email)->first();
@@ -63,7 +63,10 @@ class AuthController extends Controller
             $data = [
                 'token' => $token->plainTextToken,
                 'userId' => $user->uuid,
-                'profile' => $user->profile
+                'profileId' => $user->profile->uuid,
+                'name' => 'name',
+                'username' => 'username',
+                'email' => $user->email
             ];
             return $data;
         } else {
@@ -76,6 +79,9 @@ class AuthController extends Controller
 
         $user = $request->user();
         $user->tokens()->delete();
-        return ['message' => 'All previous tokens deleted.'];
+        return [
+            'status' => 'OK',
+            'message' => 'All previous tokens deleted.'
+        ];
     }
 }
