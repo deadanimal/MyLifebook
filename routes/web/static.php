@@ -23,5 +23,6 @@ Route::get('/mobile-from-billing', function () {
     return view('static.terms');
 })->name('mobile-from-billing');
 
-Route::get('/blogposts', [QuestionController::class, 'list_blogposts']);
-Route::get('/blogposts/{blogpost_id}', [QuestionController::class, 'detail_blogpost']);
+Route::get('/blogposts', [BlogpostController::class, 'list_blogposts']);
+
+Route::get('/blogposts/{slugname}', [BlogpostController::class, 'detail_blogpost']);

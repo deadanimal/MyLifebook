@@ -13,8 +13,8 @@ class BlogpostController extends Controller
     }
 
     public function detail_blogpost(Request $request) {
-        $id = (int)$request->route('blogpost_id');
-        $blogpost = Blogpost::find($id);
+        $slugname = $request->route('slugname');
+        $blogpost = Blogpost::where('slugname', $slugname)->first();
         return view('static.blogpost', compact('blogpost'));
     }
 }
