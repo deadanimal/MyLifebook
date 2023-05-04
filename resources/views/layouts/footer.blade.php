@@ -6,13 +6,13 @@
                 <a href="/" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Home</a>
             </div>
                         
-            <div class="pb-6">
+            {{-- <div class="pb-6">
                 <a href="/about" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
             </div>
 
             <div class="pb-6">
                 <a href="/records" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Record</a>
-            </div>
+            </div> --}}
 
             <div class="pb-6">
                 <a href="/terms" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
