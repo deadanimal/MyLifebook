@@ -2,9 +2,7 @@
 
 @section('content')
 
-HOME
-
-Terms and Conditions
+<p class="text-2xl">Terms and Conditions</p>
 Welcome to My Memoir!
 
 These terms and conditions outline the rules and regulations for the use of DCB Platform Limited's Website, located at https://memoir.my.

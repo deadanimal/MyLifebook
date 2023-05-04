@@ -2,7 +2,7 @@
 
 @section('content')
 
-Privacy Policy
+<p class="text-2xl">Privacy Policy</p>
 My Memoir website is owned by DCB Platform Limited, which is a data controller of your personal data.
 
 We have adopted this Privacy Policy, which determines how we are processing the information collected by My Memoir, which also provides the reasons why we must collect certain personal data about you. Therefore, you must read this Privacy Policy before using My Memoir website.
