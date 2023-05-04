@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogpostController;
 
 Route::get('/', function () {
     return view('static.home');
@@ -21,3 +22,6 @@ Route::get('/terms', function () {
 Route::get('/mobile-from-billing', function () {
     return view('static.terms');
 })->name('mobile-from-billing');
+
+Route::get('/blogposts', [QuestionController::class, 'list_blogposts']);
+Route::get('/blogposts/{blogpost_id}', [QuestionController::class, 'detail_blogpost']);
