@@ -78,8 +78,7 @@ class AuthController extends Controller
     {
 
         $user = $request->user();
-        dd($user);
-        //$user->tokens()->delete();
+        $user->tokens()->delete();
         return [
             'status' => 'OK',
             'message' => 'All previous tokens deleted.'
