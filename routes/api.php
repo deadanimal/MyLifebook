@@ -15,6 +15,7 @@ require __DIR__.'/api/chat.php';
 require __DIR__.'/api/document.php';
 require __DIR__.'/api/profile.php';
 require __DIR__.'/api/record.php';
+require __DIR__.'/api/video.php';
 // require __DIR__.'/api/question.php';
 // require __DIR__.'/api/site.php';
 // require __DIR__.'/api/static.php';
