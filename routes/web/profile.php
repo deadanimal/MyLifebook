@@ -16,7 +16,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/profiles', [ProfileController::class, 'create_profile']);
     Route::put('/profiles/{profile_id}', [ProfileController::class, 'update_profile']);
 
-    Route::get('/billing', [ProfileController::class, 'billing']);
-    Route::get('/billing-from-mobile', [ProfileController::class, 'billing_from_mobile']);
+    Route::get('/billing', [ProfileController::class, 'billing']);    
 
 });
+
+Route::get('/billing-from-mobile', [ProfileController::class, 'billing_from_mobile']);
