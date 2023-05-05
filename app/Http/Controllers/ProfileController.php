@@ -42,7 +42,7 @@ class ProfileController extends Controller
         $token = PersonalAccessToken::findToken($tokenQuery);
         $user = $token->tokenable;
         $user->createOrGetStripeCustomer();
-        return $request->user()->redirectToBillingPortal(route('dashboard'));        
+        return $user->redirectToBillingPortal(route('dashboard'));        
     }        
 
     public function create_profile(Request $request) {
