@@ -28,5 +28,5 @@ Route::get('/blogposts', [BlogpostController::class, 'list_blogposts']);
 Route::get('/blogposts/{slugname}', [BlogpostController::class, 'detail_blogpost']);
 
 Route::get('/closeWindow', function () {
-    return view('static.terms');
+    return view('static.closeWindow');
 })->name('closeWindow');
