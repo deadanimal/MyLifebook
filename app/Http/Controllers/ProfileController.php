@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Profile;
 use Illuminate\Http\Request;
+use Laravel\Sanctum\PersonalAccessToken;
 
 class ProfileController extends Controller
 {
@@ -34,7 +35,15 @@ class ProfileController extends Controller
         $user = $request->user();
         $user->createOrGetStripeCustomer();
         return $request->user()->redirectToBillingPortal(route('dashboard'));        
-    }    
+    }  
+    
+    public function billing_from_mobile(Request $request) {
+        $tokenQuery = $request->query('token');
+        $token = PersonalAccessToken::findToken($tokenQuery);
+        $user = $token->tokenable;
+        $user->createOrGetStripeCustomer();
+        return $request->user()->redirectToBillingPortal(route('dashboard'));        
+    }        
 
     public function create_profile(Request $request) {
 
