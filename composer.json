@@ -20,6 +20,7 @@
         "openai-php/client": "^0.4.2",
         "openai-php/laravel": "^0.4.3",
         "pbmedia/laravel-ffmpeg": "^8.3",
+        "sinnbeck/markdom": "^2.0",
         "spatie/image": "^2.2",
         "spatie/laravel-activitylog": "^4.7",
         "spatie/laravel-markdown": "^2.3"
