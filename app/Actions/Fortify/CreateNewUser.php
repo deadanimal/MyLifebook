@@ -42,10 +42,7 @@ class CreateNewUser implements CreatesNewUsers
             'user_id' => $user->id,
         ]);     
         
-        $user
-            ->newSubscription( 'prod_N3Kx5RISCPvNCg', 'price_1MJEHqL56wwkJgEVb4KLIZFQ')
-            ->trialDays(14)
-            ->create();   
+        $user->createAsStripeCustomer();
 
         return $user;
     }
