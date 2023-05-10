@@ -14,7 +14,7 @@
             <form class="space-y-6" action="/reset-password" method="POST">
                 @csrf
 
-                <input type="hidden" name="token" value="{{request()->route('token')}}">
+                <input type="hidden" name="token" value="{{ request()->route('token') }}">
 
               
 
