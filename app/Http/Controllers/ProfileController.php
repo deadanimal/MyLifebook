@@ -97,13 +97,7 @@ class ProfileController extends Controller
         $profile_type = $profile->type;
         $profile_id = $profile->id;
 
-        if ($profile_type == 'admin') {
-            return view('profile.admin-dashboard');
-        } else if ($profile_type == 'enduser') {
-            return view('profile.enduser-dashboard');
-        } else {
-
-        }
+        return view('app.dashboard');
         
     }      
 
