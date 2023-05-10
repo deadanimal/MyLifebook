@@ -7,4 +7,9 @@
     topics trend, learning <br/>
     notifications e.g. birthday or social aspect <br/>
     phone book/email, etc.. <br/>
+
+    <form action="/logout" method="POST">
+        @csrf
+        <button type="submit">Logout</button>
+    </form>
 @endsection
