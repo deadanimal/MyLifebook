@@ -40,9 +40,19 @@ class CreateNewUser implements CreatesNewUsers
 
         Profile::create([
             'user_id' => $user->id,
-        ]);     
-        
-        $user->createAsStripeCustomer();
+        ]);
+
+        if ($input['referral']) {
+            $user->createAsStripeCustomer();
+        } else {
+            $options = [
+                'metadata' => [
+                    'referral' => $input['referral']
+                ]
+            ];
+            $user->createAsStripeCustomer($options);
+        }
+
 
         return $user;
     }
