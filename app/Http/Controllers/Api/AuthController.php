@@ -77,11 +77,12 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
 
-        $user = $request->user();
-        $user->tokens()->delete();
+        $currentToken = $request->user()->currentAccessToken();
+        $request->user()->currentAccessToken()->delete();
         return [
             'status' => 'OK',
-            'message' => 'All previous tokens deleted.'
+            'message' => 'Token deleted.',
+            'token' => $currentToken
         ];
     }
 }
