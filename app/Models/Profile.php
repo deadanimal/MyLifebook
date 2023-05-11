@@ -14,6 +14,7 @@ class Profile extends Model
         'username',
         'uuid',
         'user_id',
+        'about'
     ];    
     
     protected $hidden = [

@@ -24,8 +24,12 @@ class ProfileController extends Controller
         $profile_type = $profile->type;
         $profile_id = $profile->id;
 
-        $profile->update([
+        $user->update([
+            'name'=> $request->name
+        ]);           
 
+        $profile->update([
+            'about'=> $request->about
         ]);
 
         return back();
