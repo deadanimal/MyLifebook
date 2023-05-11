@@ -106,7 +106,12 @@ class ProfileController extends Controller
     }
 
     public function test_post(Request $request) {
-        dd($request);
+        if ($request->has('referral')) {
+            dd($request->referral);
+        } else {
+            dd('no referral');
+        }
+        
         return back();
     }
 
