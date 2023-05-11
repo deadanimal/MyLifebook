@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\RecordController;
+use App\Http\Controllers\Web\RecordController;
 use Illuminate\Support\Facades\Route;
 
 

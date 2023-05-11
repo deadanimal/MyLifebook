@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BlogpostController;
+use App\Http\Controllers\Web\BlogpostController;
 
 Route::get('/', function () {
     return view('static.home');

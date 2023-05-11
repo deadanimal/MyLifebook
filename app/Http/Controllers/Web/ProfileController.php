@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Web;
 
 use App\Models\Profile;
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ class ProfileController extends Controller
         $profile_type = $profile->type;
         $profile_id = $profile->id;
 
-        return view('profile.self');
+        return view('app.profile', compact('profile'));
     }
     
     public function update_self_profile(Request $request) {

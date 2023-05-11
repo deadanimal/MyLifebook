@@ -9,4 +9,6 @@
 
     delete account and files <br/>
     migrate all data <br/>
+
+    <a href="/billing">Go to billing</a>
 @endsection

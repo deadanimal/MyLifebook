@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Web;
 
 use App\Models\Profile;
 use App\Models\Question;
@@ -39,7 +39,7 @@ class RecordController extends Controller {
             ['profile_id', '=', $profile_id]
         ])->get();
 
-        return view('record.list', compact('records'));
+        return view('app.records', compact('records'));
     }
 
     public function detail_record(Request $request) {
@@ -55,7 +55,7 @@ class RecordController extends Controller {
             ['id', '=', $id],
         ])->get();  
 
-        return view('record.detail', compact('record'));      
+        return view('app.record', compact('record'));      
     }
 
     public function update_record(Request $request) {

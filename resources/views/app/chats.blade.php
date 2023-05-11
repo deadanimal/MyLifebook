@@ -8,9 +8,9 @@
         <button class="rounded-full" type="submit">Ask</button>
     </form> --}}
 
-    @forelse($records as $record)
-        {{ $record }} <br />
+    @forelse($chats as $chat)
+        {{ $chat }} <br />
     @empty
-        No Record Exist Yet.
+        No Conversation Exist Yet.
     @endforelse
 @endsection
