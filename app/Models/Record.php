@@ -10,6 +10,7 @@ class Record extends Model
     use HasFactory;
 
     protected $fillable = [ 
+        'title',
         'record_type',
         'raw_url',
         'profile_id',

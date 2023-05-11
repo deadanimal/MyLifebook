@@ -7,6 +7,7 @@ use App\Models\Question;
 use App\Models\Record;
 use App\Models\Rewind;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class RecordController extends Controller {
 
@@ -20,10 +21,10 @@ class RecordController extends Controller {
         // queue to transform image, video, audio
  
         $record = Record::create([
-            'title' => '',
-            'type' => '',
-            'status' => '',
-            'profile_id' => $profile_id
+            'title' => $request->title,
+            'raw_url' => $request->file('file')->store('mymemoir/records'),
+            'profile_id' => $profile_id,
+            'uuid' => (string) Str::orderedUuid(),         
         ]);
 
         return back();
