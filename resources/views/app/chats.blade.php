@@ -38,14 +38,10 @@
                                                 <div class="text-sm">
                                                     <a href="#" class="font-medium text-gray-900">You</a>
                                                 </div>
-                                                <p class="mt-0.5 text-sm text-gray-500">Commented 6d ago</p>
+                                                <p class="mt-0.5 text-sm text-gray-500">Commented {{$chat->created_at}} ago</p>
                                             </div>
                                             <div class="mt-2 text-sm text-gray-700">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc
-                                                    ipsum
-                                                    tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus
-                                                    quis
-                                                    sed purus nam.</p>
+                                                <p>{{$chat->message}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -56,7 +52,7 @@
                                     <div class="relative flex items-start space-x-3">
                                         <div class="relative">
                                             <img class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-8 ring-white"
-                                                src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
+                                                src="/assets/vectors/sophy.png"
                                                 alt="">
 
                                             {{-- <span class="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px">
@@ -73,11 +69,11 @@
                                                 <div class="text-sm">
                                                     <a href="#" class="font-medium text-gray-900">Sophy</a>
                                                 </div>
-                                                <p class="mt-0.5 text-sm text-gray-500">Commented 2h ago</p>
+                                                <p class="mt-0.5 text-sm text-gray-500">Commented {{$chat->updated_at}} ago</p>
                                             </div>
                                             <div class="mt-2 text-sm text-gray-700">
                                                 <p>
-                                                    {{ $chat }}
+                                                    {{ $chat->response }}
                                                 </p>
                                             </div>
                                         </div>

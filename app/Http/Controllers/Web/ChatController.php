@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Models\Chat;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ChatController extends Controller
 {
@@ -13,10 +14,15 @@ class ChatController extends Controller
         $profile_id = $user->profile->id; 
  
         $chat = Chat::create([
+            'message' => $request->message,
+            'uuid' => (string) Str::orderedUuid(), 
             'profile_id' => $profile_id
         ]);
 
-        return back();
+        $sophy_response = '';
+
+        return view('app.sophy_response', 
+            compact('chat', 'sophy_response'));
     }
 
     public function list_chats(Request $request) {

@@ -21,14 +21,15 @@
                             <p class="text-sm font-semibold text-gray-900">
                                 <a href="#" class="hover:underline">Sophy</a>
                             </p>
-                            {{-- <p class="text-sm text-gray-500">
+                            <p class="text-sm text-gray-500">
                                 <a href="#" class="hover:underline">December 9 at 11:43 AM</a>
-                            </p> --}}
+                            </p>
                         </div>
                     </div>
 
                     <div class="mx-auto py-6">
                         <p>Hello, welcome back! </p>
+                        {{$sophy_response}}
                     </div>
 
                 </div>
@@ -39,17 +40,17 @@
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
                             <img class="inline-block h-10 w-10 rounded-full"
-                                src="https://img.icons8.com/?size=512&id=qeYxlZaoymoc&format=png"
+                                src="/assets/vectors/sophy.png"
                                 alt="">
                         </div>
                         <div class="min-w-0 flex-1">
                             <form action="/chats" method="POST">
                                 @csrf
                                 <div class="border-b border-gray-200 focus-within:border-indigo-600">
-                                    <label for="comment" class="sr-only">Chat with Sophy</label>
-                                    <textarea rows="3" name="message" id="comment"
+                                    <label for="comment" class="sr-only">Add your comment</label>
+                                    <textarea rows="3" name="comment" id="comment"
                                         class="block w-full resize-none border-0 border-b border-transparent p-0 pb-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-600 focus:ring-0 sm:text-sm sm:leading-6"
-                                        placeholder="Ask sophy anything..."></textarea>
+                                        placeholder="Add your comment..."></textarea>
                                 </div>
                                 <div class="flex justify-between pt-2">
                                     <div class="flex items-center space-x-5">

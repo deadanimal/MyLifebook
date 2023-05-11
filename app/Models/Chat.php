@@ -11,12 +11,6 @@ class Chat extends Model
 
     protected $fillable = [
         'message',
-        'raw_message',
-        'raw_audio_url',
-
-        'from_bot',
-        'chat_type',
-
         'profile_id',
         'uuid',
     ];        
