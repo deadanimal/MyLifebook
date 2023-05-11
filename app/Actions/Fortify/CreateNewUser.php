@@ -53,6 +53,12 @@ class CreateNewUser implements CreatesNewUsers
             $user->createAsStripeCustomer();
         }
 
+        if($input['plan'] == 1) {
+            $user->newSubscription('prod_NlXiQkkGh0lQFF', 'price_1N00cbL56wwkJgEVnCh2bmB7');
+        }
+
+        $user->plan = (int) $input['plan'];
+        $user->save();
 
         return $user;
     }

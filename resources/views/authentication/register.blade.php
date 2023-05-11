@@ -15,6 +15,8 @@
             <form class="space-y-6" action="/register" method="POST" data-rewardful>
                 @csrf
 
+                <input type="hidden" name="plan" value={{$plan}}>
+
                 <div>
                     <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                     <div class="mt-2">
