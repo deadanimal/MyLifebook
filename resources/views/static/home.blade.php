@@ -94,7 +94,7 @@
 
                     </div>
                     <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                        Supercharge your life now!
+                        Supercharge your life with <i>Memoir</i> now!
                     </h1>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
                         <i>Memoir</i> will improve your learning, memory, work, creativity, relationship in your personal and professional
