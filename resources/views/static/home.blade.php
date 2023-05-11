@@ -179,37 +179,35 @@
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Learn new things
                     </dt>
-                    <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                        commodo.</dd>
+                    <dd class="inline">Sophy will coach your to learn new languages, new skills such as programming or even life skills such as dating.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Be accountable to yourself
                     </dt>
-                    <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
+                    <dd class="inline">Track your progress to grow as a person or professional.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
-                        Your dependable assistant
+                        Your dependable coach
                     </dt>
-                    <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.</dd>
+                    <dd class="inline">Sophy will coach you in your quest to upskill yourself. Anywhere, anything, anytime.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
-                        Powerful API.
+                        Godsend assistant
                     </dt>
-                    <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-                        commodo.</dd>
+                    <dd class="inline">Sophy will help you to write text messages, emails and anything that you need from a Virtual Assistant.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Fully secure & privacy-proof
                     </dt>
-                    <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
+                    <dd class="inline">We encrypt all of your data. Your conversations will Sophy will always remain private.</dd>
                 </div>
             </dl>
         </div>
@@ -351,8 +349,7 @@
                         <div class="flex items-center justify-between gap-x-4">
                             <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900">Enterprise</h3>
                         </div>
-                        <p class="mt-4 text-sm leading-6 text-gray-600">Dedicated support and infrastructure for your
-                            company.</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">The ultimate plan to be able to use Sophy as your assistant in life and business.</p>
                         <p class="mt-6 flex items-baseline gap-x-1">
                             <span class="text-4xl font-bold tracking-tight text-gray-900">$3,000</span>
                             <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>

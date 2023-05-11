@@ -13,9 +13,7 @@
                 <div class="bg-white px-4 py-5 sm:px-6">
                     <div class="flex space-x-3">
                         <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full"
-                                src="/assets/vectors/sophy.png"
-                                alt="">
+                            <img class="h-10 w-10 rounded-full" src="/assets/vectors/sophy.png" alt="">
                         </div>
                         <div class="min-w-0 flex-1">
                             <p class="text-sm font-semibold text-gray-900">
@@ -38,9 +36,13 @@
 
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
-                            <img class="inline-block h-10 w-10 rounded-full"
-                                src="https://img.icons8.com/?size=512&id=qeYxlZaoymoc&format=png"
-                                alt="">
+                            <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            {{-- <img class="inline-block h-10 w-10 rounded-full"
+                                src="https://img.icons8.com/?size=512&id=qeYxlZaoymoc&format=png" alt=""> --}}
                         </div>
                         <div class="min-w-0 flex-1">
                             <form action="/chats" method="POST">
@@ -49,7 +51,7 @@
                                     <label for="comment" class="sr-only">Chat with Sophy</label>
                                     <textarea rows="3" name="message" id="comment"
                                         class="block w-full resize-none border-0 border-b border-transparent p-0 pb-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-600 focus:ring-0 sm:text-sm sm:leading-6"
-                                        placeholder="Ask sophy anything..."></textarea>
+                                        placeholder="Ask Sophy anything..."></textarea>
                                 </div>
                                 <div class="flex justify-between pt-2">
                                     <div class="flex items-center space-x-5">
@@ -101,15 +103,15 @@
                                                     </button> --}}
 
                                                     <!--
-                            Select popover, show/hide based on select state.
-          
-                            Entering: ""
-                              From: ""
-                              To: ""
-                            Leaving: "transition ease-in duration-100"
-                              From: "opacity-100"
-                              To: "opacity-0"
-                          -->
+                                Select popover, show/hide based on select state.
+              
+                                Entering: ""
+                                  From: ""
+                                  To: ""
+                                Leaving: "transition ease-in duration-100"
+                                  From: "opacity-100"
+                                  To: "opacity-0"
+                              -->
                                                     {{-- <ul class="absolute z-10 -ml-6 w-60 rounded-lg bg-white py-3 text-base shadow ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm"
                                                         tabindex="-1" role="listbox" aria-labelledby="listbox-label"
                                                         aria-activedescendant="listbox-option-5">
