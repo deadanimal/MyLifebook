@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="mx-auto py-6">
-                        <p>asd</p>
+                        <p>Hello, welcome back! </p>
                     </div>
 
                 </div>

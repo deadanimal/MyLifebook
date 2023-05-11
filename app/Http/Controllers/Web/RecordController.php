@@ -48,11 +48,11 @@ class RecordController extends Controller {
         $profile_id = $user->profile->id;
         $profile_type = $user->profile->type;        
         
-        $id = (int)$request->route('record_id');
+        $id = (string)$request->route('record_id');
         
         $record = Record::where([
             ['profile_id', '=', $profile_id],
-            ['id', '=', $id],
+            ['uuid', '=', $id],
         ])->get();  
 
         return view('app.record', compact('record'));      
