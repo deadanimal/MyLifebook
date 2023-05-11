@@ -43,14 +43,14 @@ class CreateNewUser implements CreatesNewUsers
         ]);
 
         if ($input['referral']) {
-            $user->createAsStripeCustomer();
-        } else {
             $options = [
                 'metadata' => [
                     'referral' => $input['referral']
                 ]
             ];
-            $user->createAsStripeCustomer($options);
+            $user->createAsStripeCustomer($options);                        
+        } else {
+            $user->createAsStripeCustomer();
         }
 
 
