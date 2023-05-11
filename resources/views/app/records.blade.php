@@ -24,9 +24,11 @@
 
                 <ul role="list" class="divide-y divide-gray-100">
                     @forelse($records as $record)
-                        
+
+                    {{$record}}
+                    
                                 
-                            <li class="flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6 lg:px-8">
+                            {{-- <li class="flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6 lg:px-8">
 
                                 <div class="flex gap-x-4">
                                     <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
@@ -60,10 +62,7 @@
 
                                 </div>
 
-                            </li>
-                                
-                        
-
+                            </li>                     --}}
 
                     @empty
                         No Record Exist Yet.

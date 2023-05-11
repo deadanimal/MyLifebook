@@ -97,8 +97,8 @@
                         Supercharge your life now!
                     </h1>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
-                        <i>Memoir</i> will improve your learning, memory, work, creativity in your personal and professional
-                        life.
+                        <i>Memoir</i> will improve your learning, memory, work, creativity, relationship in your personal and professional
+                        life. <i>Memoir</i> is your partner to <b>grow together</b>.
                     </p>
 
                     <div class="mt-10 flex items-center gap-x-6">
@@ -148,9 +148,11 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center">
                 <h2 class="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Got problem? Just ask.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                    <b>Memoir</b> is the partner for you, be it in learning a new language or reminiscing the memories in the past.
+                    <i>Memoir</i> is there for you, <b>all the time, everytime</b>.
+                </p>
             </div>
         </div>
         <div class="relative overflow-hidden pt-16">
@@ -167,61 +169,36 @@
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Push to deploy.
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />                        
+                        Assist you with your relationships
                     </dt>
-                    <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.</dd>
+                    <dd class="inline">Make a <i>memoir</i> of your special ones, to be able to text her forever.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        SSL certificates.
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
+                        Learn new things
                     </dt>
                     <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
                         commodo.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Simple queues.
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
+                        Be accountable to yourself
                     </dt>
                     <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 2.5c-1.31 0-2.526.386-3.546 1.051a.75.75 0 01-.82-1.256A8 8 0 0118 9a22.47 22.47 0 01-1.228 7.351.75.75 0 11-1.417-.49A20.97 20.97 0 0016.5 9 6.5 6.5 0 0010 2.5zM4.333 4.416a.75.75 0 01.218 1.038A6.466 6.466 0 003.5 9a7.966 7.966 0 01-1.293 4.362.75.75 0 01-1.257-.819A6.466 6.466 0 002 9c0-1.61.476-3.11 1.295-4.365a.75.75 0 011.038-.219zM10 6.12a3 3 0 00-3.001 3.041 11.455 11.455 0 01-2.697 7.24.75.75 0 01-1.148-.965A9.957 9.957 0 005.5 9c0-.028.002-.055.004-.082a4.5 4.5 0 018.996.084V9.15l-.005.297a.75.75 0 11-1.5-.034c.003-.11.004-.219.005-.328a3 3 0 00-3-2.965zm0 2.13a.75.75 0 01.75.75c0 3.51-1.187 6.745-3.181 9.323a.75.75 0 11-1.186-.918A13.687 13.687 0 009.25 9a.75.75 0 01.75-.75zm3.529 3.698a.75.75 0 01.584.885 18.883 18.883 0 01-2.257 5.84.75.75 0 11-1.29-.764 17.386 17.386 0 002.078-5.377.75.75 0 01.885-.584z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Advanced security.
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
+                        Your dependable assistant
                     </dt>
                     <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.</dd>
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.206 1.25l-1.18 2.045a1 1 0 01-1.187.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.206-1.25l1.18-2.045a1 1 0 011.187-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                                clip-rule="evenodd" />
-                        </svg>
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Powerful API.
                     </dt>
                     <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
@@ -229,15 +206,8 @@
                 </div>
                 <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                        <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                            fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                            <path fill-rule="evenodd"
-                                d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Database backups.
+                        <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
+                        Fully secure & privacy-proof
                     </dt>
                     <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.</dd>
                 </div>
@@ -253,8 +223,7 @@
                     Pricing plans for every need possible
                 </p>
             </div>
-            <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Distinctio et nulla eum soluta et
-                neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+            <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"></p>
             <div
                 class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div
@@ -263,8 +232,7 @@
                         <div class="flex items-center justify-between gap-x-4">
                             <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Personal</h3>
                         </div>
-                        <p class="mt-4 text-sm leading-6 text-gray-600">The essentials to provide your best work for
-                            clients.</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">The essentials for <i>Memoir</i> to function as your partner in personal life.</p>
                         <p class="mt-6 flex items-baseline gap-x-1">
                             <span class="text-4xl font-bold tracking-tight text-gray-900">$30</span>
                             <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
@@ -277,7 +245,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                5 products
+                                Unlimited text records & backup
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -286,7 +254,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Up to 1,000 subscribers
+                                Unlimited text conversations with Sophy
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -295,7 +263,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Basic analytics
+                                For personal use only
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -304,13 +272,12 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                48-hour support response time
+                                Community support only
                             </li>
                         </ul>
                     </div>
-                    <a href="#" aria-describedby="tier-freelancer"
-                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy
-                        plan</a>
+                    <a href="/register?plan=1" aria-describedby="tier-freelancer"
+                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Subscribe</a>
                 </div>
                 <div
                     class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:z-10 lg:rounded-b-none">
@@ -322,8 +289,7 @@
                                 class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
                                 Most popular</p>
                         </div>
-                        <p class="mt-4 text-sm leading-6 text-gray-600">A plan that scales with your rapidly growing
-                            business.</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">If you would like to grow personally and professionally, the best plan for you.</p>
                         <p class="mt-6 flex items-baseline gap-x-1">
                             <span class="text-4xl font-bold tracking-tight text-gray-900">$600</span>
                             <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
@@ -336,7 +302,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                25 products
+                                Everything that comes with Personal Plan
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -345,7 +311,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Up to 10,000 subscribers
+                                Can <b><i>talk</i></b> with Sophy
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -354,7 +320,16 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Advanced analytics
+                                Develop skills together with Sophy
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Discuss with Sophy on personal issues
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -365,20 +340,10 @@
                                 </svg>
                                 24-hour support response time
                             </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                                    aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                Marketing automations
-                            </li>
                         </ul>
                     </div>
-                    <a href="#" aria-describedby="tier-startup"
-                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500">Buy
-                        plan</a>
+                    <a href="/register?plan=2" aria-describedby="tier-startup"
+                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500">Subscribe</a>
                 </div>
                 <div
                     class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:mt-8 lg:rounded-l-none">
@@ -400,7 +365,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Unlimited products
+                                Everything that comes with Professional Plan
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -409,7 +374,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Unlimited subscribers
+                                Unlimited digital automations
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -418,7 +383,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Advanced analytics
+                                Advanced personal analytics
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -427,7 +392,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                1-hour, dedicated support response time
+                                Produce digital output and work
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -436,13 +401,13 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Marketing automations
+                                Dedicated account manager
                             </li>
                         </ul>
                     </div>
-                    <a href="#" aria-describedby="tier-enterprise"
-                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Buy
-                        plan</a>
+                    <a href="/register?plan=3" aria-describedby="tier-enterprise"
+                        class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 ">Subscribe
+                        </a>
                 </div>
             </div>
         </div>
@@ -461,16 +426,17 @@
                     <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
                         <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                             <blockquote class="text-gray-900">
-                                <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim
-                                    doloremque et ipsam.”</p>
+                                <p>
+                                    I really appreciate the thereupatic capabilities of this AI that is being able to dispense advice based on respected physcological school of thoughts.
+                                </p>
                             </blockquote>
                             <figcaption class="mt-6 flex items-center gap-x-4">
                                 <img class="h-10 w-10 rounded-full bg-gray-50"
-                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    src="https://pbs.twimg.com/profile_images/1624728504884662277/4B6NakzW_400x400.jpg"
                                     alt="">
                                 <div>
-                                    <div class="font-semibold text-gray-900">Leslie Alexander</div>
-                                    <div class="text-gray-600">@lesliealexander</div>
+                                    <div class="font-semibold text-gray-900">Afeez Aziz</div>
+                                    <a href="https://twitter.com/AfeezAziz"><div class="text-gray-600">@AfeezAziz</div></a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -488,16 +454,22 @@
                 <div class="lg:col-span-5">
                     <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
                     <p class="mt-4 text-base leading-7 text-gray-600">Can’t find the answer you’re looking for? Reach out
-                        to our <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">customer
+                        to our <a href="mailto:asksophy@memoir.my" class="font-semibold text-indigo-600 hover:text-indigo-500">customer
                             support</a> team.</p>
                 </div>
                 <div class="mt-10 lg:col-span-7 lg:mt-0">
                     <dl class="space-y-10">
                         <div>
-                            <dt class="text-base font-semibold leading-7 text-gray-900">How do you make holy water?</dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">You boil the hell out of it. Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">Can you learn a new language with <i>Memoir</i>?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Yes, you can learn a new language with the help of <b>Sophy</b>. Sophy will keep track of your progress and be your biggest cheerleader and coach to learn a new language.</dd>
                         </div>
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">Who is <b>Sophy</b>?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">
+                                Sophy is an AI chatbot that has been trained to cater to your personal preference. 
+                                She is as the smartest, nicest, perhaps prettiest AI in the world.
+                            </dd>
+                        </div>                        
                     </dl>
                 </div>
             </div>
@@ -511,16 +483,20 @@
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your productivity.<br>Start
                     using <i>Memoir</i> today.</h2>
                 <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-                    Download <i>Memoir</i> app now to superchage your personal and professional life today.
+                    Use <i>Memoir</i> to superchage your personal and professional life today.
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="/dashboard" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Access Dashboard</a>
+                    <a href="/register" class="text-sm font-semibold leading-6 text-gray-900">Register <span aria-hidden="true">→</span></a>
+                  </div>
+                {{-- <div class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="https://apps.apple.com/us/app/my-memoir/id6448801162">
                         <img src="/assets/images/app_store.svg" class="h-12 pr-4 bounce-top-icons">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=my.memoir.app">
                         <img src="/assets/images/play_store.svg" class="h-12 bounce-top-icons">
                     </a>
-                </div>
+                </div> --}}
 
             </div>
         </div>
