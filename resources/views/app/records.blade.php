@@ -1,16 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <h3>Ask question</h3>
-    <form action="/questions" method="POST">
-        @csrf
-        <input type="text" name="question" placeholder="ask question here..">
-        <button class="rounded-full" type="submit">Ask</button>
-    </form> --}}
+    <div class="py-10">
+        <header>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Record</h1>
+            </div>
+        </header>
+        <main class="py-6">
+            <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 
-    @forelse($records as $record)
-        {{ $record }} <br />
-    @empty
-        No Record Exist Yet.
-    @endforelse
+                @forelse($records as $record)
+                    {{ $record }} <br />
+                @empty
+                    No Record Exist Yet.
+                @endforelse
+
+            </div>
+        </main>
+    </div>
 @endsection

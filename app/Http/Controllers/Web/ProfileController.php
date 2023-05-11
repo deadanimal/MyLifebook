@@ -34,7 +34,7 @@ class ProfileController extends Controller
     public function billing(Request $request) {
         $user = $request->user();
         $user->createOrGetStripeCustomer();
-        return $request->user()->redirectToBillingPortal(route('dashboard'));        
+        return $request->user()->redirectToBillingPortal(route('profile'));        
     }  
     
     public function billing_from_mobile(Request $request) {
@@ -99,6 +99,15 @@ class ProfileController extends Controller
 
         return view('app.dashboard');
         
-    }      
+    }     
+    
+    public function test_get(Request $request) {
+        return view('app.test');
+    }
+
+    public function test_post(Request $request) {
+        dd($request);
+        return back();
+    }
 
 }

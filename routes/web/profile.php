@@ -6,7 +6,7 @@ use App\Http\Controllers\Web\ProfileController;
 
 Route::middleware('auth')->group(function () {
 
-    Route::get('/profile', [ProfileController::class, 'view_self_profile']);   
+    Route::get('/profile', [ProfileController::class, 'view_self_profile'])->name('profile');   
     Route::put('/profile', [ProfileController::class, 'update_self_profile']);   
 
     Route::get('/dashboard', [ProfileController::class, 'view_dashboard'])->name('dashboard'); 
@@ -21,3 +21,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/billing-from-mobile', [ProfileController::class, 'billing_from_mobile']);
+
+Route::get('/test', [ProfileController::class, 'test_get']);
+Route::post('/test', [ProfileController::class, 'test_post']);
