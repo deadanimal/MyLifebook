@@ -17,12 +17,10 @@ class RecordController extends Controller {
         $profile_id = $user->profile->id;
         $profile_type = $user->profile->type;    
 
-        // queue upload to R2
-        // queue to transform image, video, audio
- 
         $record = Record::create([
             'title' => $request->title,
             'raw_url' => $request->file('file')->store('mymemoir/records'),
+            'status' => 'created',
             'profile_id' => $profile_id,
             'uuid' => (string) Str::orderedUuid(),         
         ]);

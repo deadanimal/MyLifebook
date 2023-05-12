@@ -1,11 +1,13 @@
-<nav class="bg-gray-800">
+<nav class="bg-gray-800" x-data="{ open: false }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button"
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    aria-controls="mobile-menu" aria-expanded="false">
+                    aria-controls="mobile-menu" aria-expanded="false"
+                    x-on:click="open = !open"
+                    >
                     <span class="sr-only">Open main menu</span>
                     <!--
               Icon when menu is closed.
@@ -60,7 +62,7 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div class="sm:hidden" id="mobile-menu" x-show="open">
         <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="/dashboard"

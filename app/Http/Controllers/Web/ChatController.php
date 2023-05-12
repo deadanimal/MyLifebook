@@ -19,10 +19,12 @@ class ChatController extends Controller
             'profile_id' => $profile_id
         ]);
 
-        $sophy_response = '';
+        $chats = Chat::where([
+            'profile_id' => $profile_id
+        ])->orderBy('created_at','desc')->take(5)->get();;
 
-        return view('app.sophy_response', 
-            compact('chat', 'sophy_response'));
+        return view('app.chats', 
+            compact('chat', 'chats'));
     }
 
     public function list_chats(Request $request) {
@@ -32,7 +34,7 @@ class ChatController extends Controller
 
         $chats = Chat::where([
             ['profile_id', '=', $profile_id]
-        ])->get();
+        ])->orderBy('created_at','desc')->take(5)->get();;
 
         return view('app.chats', compact('chats'));
     }

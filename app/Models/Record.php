@@ -12,8 +12,16 @@ class Record extends Model
     protected $fillable = [ 
         'title',
         'record_type',
+        'status',
         'raw_url',
         'profile_id',
         'uuid'
-    ];           
+    ];      
+
+    protected $hidden = [
+        'id',
+        'profile_id',
+    ];
+    
+    
 }
