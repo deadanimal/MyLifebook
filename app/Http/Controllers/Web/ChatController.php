@@ -30,7 +30,7 @@ class ChatController extends Controller
     public function list_chats(Request $request) {
 
         $user = $request->user();
-        $profile_id = $user->profile->id;           
+        $profile_id = $user->profile->id;               
 
         $chats = Chat::where([
             ['profile_id', '=', $profile_id]

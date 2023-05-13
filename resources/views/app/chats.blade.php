@@ -93,7 +93,7 @@
                     </ul>
                 </div>
 
-                @if ($chat)
+                @if (isset($chat))
                     <div class="flex items-start space-x-4 pt-6">
                         <div class="flex-shrink-0">
                             <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
