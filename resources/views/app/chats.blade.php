@@ -4,7 +4,7 @@
     <div class="pt-10">
         <header>
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Conversation with Sophy</h1>
+                <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Conversation with Sophie</h1>
             </div>
         </header>
         <main class="pt-6">
@@ -72,7 +72,7 @@
                                         <div class="min-w-0 flex-1">
                                             <div>
                                                 <div class="text-sm">
-                                                    <a href="#" class="font-medium text-gray-900">Sophy</a>
+                                                    <a href="#" class="font-medium text-gray-900">Sophie</a>
                                                 </div>
                                                 <p class="mt-0.5 text-sm text-gray-500">Commented {{ $chat->updated_at }}
                                                     ago</p>
@@ -108,10 +108,10 @@
                             <form action="/chats" method="POST">
                                 @csrf
                                 <div class="border-b border-gray-200 focus-within:border-indigo-600">
-                                    <label for="comment" class="sr-only">Chat with Sophy</label>
+                                    <label for="comment" class="sr-only">Chat with Sophie</label>
                                     <textarea rows="3" name="message" id="comment"
                                         class="block w-full resize-none border-0 border-b border-transparent p-0 pb-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-600 focus:ring-0 sm:text-sm sm:leading-6"
-                                        placeholder="Ask Sophy anything..."></textarea>
+                                        placeholder="Ask Sophie anything..."></textarea>
                                 </div>
                                 <div class="flex justify-between pt-2">
                                     <div class="flex items-center space-x-5">

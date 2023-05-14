@@ -4,7 +4,7 @@
     <div class="py-10">
         <header>
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Ask Sophy</h1>
+                <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Ask Sophie</h1>
             </div>
         </header>
         <main class="py-6">
@@ -17,7 +17,7 @@
                         </div>
                         <div class="min-w-0 flex-1">
                             <p class="text-sm font-semibold text-gray-900">
-                                <a href="#" class="hover:underline">Sophy</a>
+                                <a href="#" class="hover:underline">Sophie</a>
                             </p>
                             {{-- <p class="text-sm text-gray-500">
                                 <a href="#" class="hover:underline">December 9 at 11:43 AM</a>
@@ -48,10 +48,10 @@
                             <form action="/chats" method="POST">
                                 @csrf
                                 <div class="border-b border-gray-200 focus-within:border-indigo-600">
-                                    <label for="comment" class="sr-only">Chat with Sophy</label>
+                                    <label for="comment" class="sr-only">Chat with Sophie</label>
                                     <textarea rows="3" name="message" id="comment"
                                         class="block w-full resize-none border-0 border-b border-transparent p-0 pb-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-600 focus:ring-0 sm:text-sm sm:leading-6"
-                                        placeholder="Ask Sophy anything..."></textarea>
+                                        placeholder="Ask Sophie anything..."></textarea>
                                 </div>
                                 <div class="flex justify-between pt-2">
                                     <div class="flex items-center space-x-5">

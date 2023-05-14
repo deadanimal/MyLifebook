@@ -146,7 +146,7 @@
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Learn new things
                     </dt>
-                    <dd class="inline">Sophy will coach your to learn new languages, new skills such as programming or even
+                    <dd class="inline">Sophie will coach your to learn new languages, new skills such as programming or even
                         life skills such as dating.</dd>
                 </div>
                 <div class="relative pl-9">
@@ -161,7 +161,7 @@
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Your dependable coach
                     </dt>
-                    <dd class="inline">Sophy will coach you in your quest to upskill yourself. Anywhere, anything, anytime.
+                    <dd class="inline">Sophie will coach you in your quest to upskill yourself. Anywhere, anything, anytime.
                     </dd>
                 </div>
                 <div class="relative pl-9">
@@ -169,7 +169,7 @@
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Godsend assistant
                     </dt>
-                    <dd class="inline">Sophy will help you to write text messages, emails and anything that you need from a
+                    <dd class="inline">Sophie will help you to write text messages, emails and anything that you need from a
                         Virtual Assistant.</dd>
                 </div>
                 <div class="relative pl-9">
@@ -177,7 +177,7 @@
                         <img src="/assets/vectors/love-svgrepo-com.svg" class="absolute left-1 top-1 h-5 w-5 " />
                         Fully secure & privacy-proof
                     </dt>
-                    <dd class="inline">We encrypt all of your data. Your conversations will Sophy will always remain
+                    <dd class="inline">We encrypt all of your data. Your conversations will Sophie will always remain
                         private.</dd>
                 </div>
             </dl>
@@ -224,7 +224,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Unlimited text conversations with Sophy
+                                Unlimited text conversations with Sophie
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -282,7 +282,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Can <b><i>talk</i></b> with Sophy
+                                Can <b><i>talk</i></b> with Sophie
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -291,7 +291,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Develop skills together with Sophy
+                                Develop skills together with Sophie
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -300,7 +300,7 @@
                                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                Discuss with Sophy on personal issues
+                                Discuss with Sophie on personal issues
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
@@ -323,7 +323,7 @@
                         <div class="flex items-center justify-between gap-x-4">
                             <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900">Enterprise</h3>
                         </div>
-                        <p class="mt-4 text-sm leading-6 text-gray-600">The ultimate plan to be able to use Sophy as your
+                        <p class="mt-4 text-sm leading-6 text-gray-600">The ultimate plan to be able to use Sophie as your
                             assistant in life and business.</p>
                         <p class="mt-6 flex items-baseline gap-x-1">
                             <span class="text-4xl font-bold tracking-tight text-gray-900">$3,000</span>
@@ -441,13 +441,13 @@
                                 <i>Memoir</i>?
                             </dt>
                             <dd class="mt-2 text-base leading-7 text-gray-600">Yes, you can learn a new language with the
-                                help of <b>Sophy</b>. Sophy will keep track of your progress and be your biggest cheerleader
+                                help of <b>Sophie</b>. Sophie will keep track of your progress and be your biggest cheerleader
                                 and coach to learn a new language.</dd>
                         </div>
                         <div>
-                            <dt class="text-base font-semibold leading-7 text-gray-900">Who is <b>Sophy</b>?</dt>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">Who is <b>Sophie</b>?</dt>
                             <dd class="mt-2 text-base leading-7 text-gray-600">
-                                Sophy is an AI chatbot that has been trained to cater to your personal preference.
+                                Sophie is an AI chatbot that has been trained to cater to your personal preference.
                                 She is as the smartest, nicest, perhaps prettiest AI in the world.
                             </dd>
                         </div>
