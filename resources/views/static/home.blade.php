@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-white">
 
-        <header class="absolute inset-x-0 top-0 z-50">
+        <header class="absolute inset-x-0 top-0 z-50" x-data="{ open: false }">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1">
                     <a href="/" class="-m-1.5 p-1.5">
@@ -13,7 +13,7 @@
                     </a>
                 </div>
                 <div class="flex lg:hidden">
-                    <button type="button"
+                    <button type="button" x-on:click="open = !open"
                         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Open main menu</span>
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -35,7 +35,7 @@
                 </div>
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
-            <div class="lg:hidden" role="dialog" aria-modal="true">
+            <div class="lg:hidden" role="dialog" aria-modal="true" x-show="open">
                 <!-- Background backdrop, show/hide based on slide-over state. -->
                 <div class="fixed inset-0 z-50"></div>
                 <div
@@ -46,7 +46,7 @@
                             <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                                 alt="">
                         </a>
-                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" x-on:click="open = !open"> 
                             <span class="sr-only">Close menu</span>
                             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                 aria-hidden="true">
@@ -89,8 +89,8 @@
                     <div class="mt-10 flex items-center gap-x-6">
                         <a href="/dashboard"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                            Access Dashboard</a>
-                        <a href="/register" class="text-sm font-semibold leading-6 text-gray-900">Register an account
+                            Dashboard</a>
+                        <a href="/register" class="text-sm font-semibold leading-6 text-gray-900">Register
                             <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
@@ -468,8 +468,7 @@
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="/dashboard"
-                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Access
-                        Dashboard</a>
+                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Dashboard</a>
                     <a href="/register" class="text-sm font-semibold leading-6 text-gray-900">Register <span
                             aria-hidden="true">→</span></a>
                 </div>
