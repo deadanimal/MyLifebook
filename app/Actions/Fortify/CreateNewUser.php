@@ -42,8 +42,6 @@ class CreateNewUser implements CreatesNewUsers
             'user_id' => $user->id,
         ]);
 
-        dd($input);
-
         if (array_key_exists('referral',$input)) {
             $options = [
                 'metadata' => [
