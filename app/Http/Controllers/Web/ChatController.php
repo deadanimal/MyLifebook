@@ -6,6 +6,7 @@ use App\Models\Chat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use Illuminate\Support\Facades\Http;
 class ChatController extends Controller
 {
     public function create_chat(Request $request) {
@@ -18,6 +19,12 @@ class ChatController extends Controller
             'uuid' => (string) Str::orderedUuid(), 
             'profile_id' => $profile_id
         ]);
+
+        $response = Http::post('https://mychatbot.fly.dev', [
+            'key' => env('MYCHATBOT_KEY'),
+            'profile' => $profile_id,
+            'chat' => $chat->message
+        ]);        
 
         $chats = Chat::where([
             'profile_id' => $profile_id

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eb12485f8eb4d1187998a97fea8128d",
+    "content-hash": "1ff8fcaad46bd3d90943cd4bd9fbc837",
     "packages": [
         {
             "name": "adrianmejias/pinecone",
