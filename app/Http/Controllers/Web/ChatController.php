@@ -29,12 +29,7 @@ class ChatController extends Controller
         $chat->response = $response['from_bot'];
         $chat->save();
 
-        $chats = Chat::where([
-            'profile_id' => $profile_id
-        ])->orderBy('created_at','desc')->take(5)->get();;
-
-        return view('app.chats', 
-            compact('response','chat', 'chats'));
+        return redirect('/chats');
     }
 
     public function list_chats(Request $request) {
