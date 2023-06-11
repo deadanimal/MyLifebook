@@ -26,7 +26,7 @@ class ChatController extends Controller
             'message' => $chat->message
         ]);        
 
-        $chat->response = $response['response'];
+        $chat->response = $response['from_bot'];
         $chat->save();
 
         $chats = Chat::where([
