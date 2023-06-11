@@ -26,6 +26,9 @@ class ChatController extends Controller
             'message' => $chat->message
         ]);        
 
+        $chat->response = $response['response'];
+        $chat->save();
+
         $chats = Chat::where([
             'profile_id' => $profile_id
         ])->orderBy('created_at','desc')->take(5)->get();;
