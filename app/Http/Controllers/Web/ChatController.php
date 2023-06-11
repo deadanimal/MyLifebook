@@ -23,7 +23,7 @@ class ChatController extends Controller
         $response = Http::post('https://mychatbot.fly.dev', [
             'key' => env('MYCHATBOT_KEY'),
             'profile' => $profile_id,
-            'chat' => $chat->message
+            'message' => $chat->message
         ]);        
 
         $chats = Chat::where([
