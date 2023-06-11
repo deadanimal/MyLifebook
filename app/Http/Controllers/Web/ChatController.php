@@ -31,7 +31,7 @@ class ChatController extends Controller
         ])->orderBy('created_at','desc')->take(5)->get();;
 
         return view('app.chats', 
-            compact('chat', 'chats'));
+            compact('response','chat', 'chats'));
     }
 
     public function list_chats(Request $request) {

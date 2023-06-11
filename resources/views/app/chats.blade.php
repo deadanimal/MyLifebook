@@ -315,6 +315,8 @@
                     </div>
                 @endif
 
+                {{ $response }}
+
 
 
             </div>
