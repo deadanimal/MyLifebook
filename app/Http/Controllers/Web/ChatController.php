@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
 class ChatController extends Controller
 {
+    
     public function create_chat(Request $request) {
 
         $user = $request->user();
