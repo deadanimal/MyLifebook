@@ -22,12 +22,13 @@ class ChatController extends Controller
         ]);
 
         $response = Http::post('https://mychatbot.fly.dev', [
+            'application' => 'mymemoir',
             'key' => env('MYCHATBOT_KEY'),
-            'profile' => $profile_id,
+            'profile_id' => $profile_id,
             'message' => $chat->message
         ]);        
 
-        $chat->response = $response['from_bot'];
+        $chat->response = $response['bot']['response'];
         $chat->save();
 
         return redirect('/chats');
